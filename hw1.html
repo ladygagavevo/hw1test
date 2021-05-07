@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		i=0;
+		var x =["http://images.akamai.steamusercontent.com/ugc/31866050562064998/9A3328C7794D455E6711557C483007B1231EA3BE/","https://jeffreyklyles.files.wordpress.com/2015/04/agents-of-shield-frenemy-of-my-enemy-skye.jpg","http://timewantsaskeleton.files.wordpress.com/2014/02/ladysif.jpg","http://www.ew.com/sites/default/files/1425447650/SHIELD%20Palicki.jpg"
+		]
+		function f(y){
+		i=i+y;
+		if(i<0){
+		i=3;
+		}
+		if(i>3){
+		i=0;
+		}
+		
+		document.getElementById("demo").innerHTML = "<img src='"+x[i]+ "'width='100%'>"
+		
+		}
+		</script>
+	</head>
+
+<body>
+
+<div id="demo">
+	<img src="http://images.akamai.steamusercontent.com/ugc/31866050562064998/9A3328C7794D455E6711557C483007B1231EA3BE/" width="100%">
+</div>
+<a href="javascript:f(-1);">last picture</a>
+<a href="javascript:f(+1);">next picture</a>
+
+</body>
+</html>
